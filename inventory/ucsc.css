@@ -1,0 +1,235 @@
+/* ucsc.CSS */
+html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
+/* Extract */
+html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}
+article,aside,details,figcaption,figure,footer,header,main,menu,nav,section{display:block}summary{display:list-item}
+audio,canvas,progress,video{display:inline-block}progress{vertical-align:baseline}
+audio:not([controls]){display:none;height:0}[hidden],template{display:none}
+a{background-color:transparent}a:active,a:hover{outline-width:0}
+abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}
+b,strong{font-weight:bolder}dfn{font-style:italic}mark{background:#ff0;color:#000}
+small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
+sub{bottom:-0.25em}sup{top:-0.5em}figure{margin:1em 40px}img{border-style:none}
+code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}hr{box-sizing:content-box;height:0;overflow:visible}
+button,input,select,textarea,optgroup{font:inherit;margin:0}optgroup{font-weight:bold}
+button,input{overflow:visible}button,select{text-transform:none}
+button,[type=button],[type=reset],[type=submit]{-webkit-appearance:button}
+button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}
+button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}
+fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:.35em .625em .75em}
+legend{color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}
+[type=checkbox],[type=radio]{padding:0}
+[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}
+[type=search]{-webkit-appearance:textfield;outline-offset:-2px}
+[type=search]::-webkit-search-decoration{-webkit-appearance:none}
+::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}
+/* End extract */
+html,body{font-family:Verdana,sans-serif;font-size:15px;line-height:1.5}html{overflow-x:hidden}
+h1{font-size:36px}h2{font-size:30px}h3{font-size:24px}h4{font-size:20px}h5{font-size:18px}h6{font-size:16px}
+.ucsc-serif{font-family:serif}.ucsc-sans-serif{font-family:sans-serif}.ucsc-cursive{font-family:cursive}.ucsc-monospace{font-family:monospace}
+h1,h2,h3,h4,h5,h6{font-family:"Segoe UI",Arial,sans-serif;font-weight:400;margin:10px 0}.ucsc-wide{letter-spacing:4px}
+hr{border:0;border-top:1px solid #eee;margin:20px 0}
+.ucsc-image{max-width:100%;height:auto}img{vertical-align:middle}a{color:inherit}
+.ucsc-table,.ucsc-table-all{border-collapse:collapse;border-spacing:0;width:100%;display:table}.ucsc-table-all{border:1px solid #ccc}
+.ucsc-bordered tr,.ucsc-table-all tr{border-bottom:1px solid #ddd}.ucsc-striped tbody tr:nth-child(even){background-color:#f1f1f1}
+.ucsc-table-all tr:nth-child(odd){background-color:#fff}.ucsc-table-all tr:nth-child(even){background-color:#f1f1f1}
+.ucsc-hoverable tbody tr:hover,.ucsc-ul.ucsc-hoverable li:hover{background-color:#ccc}.ucsc-centered tr th,.ucsc-centered tr td{text-align:center}
+.ucsc-table td,.ucsc-table th,.ucsc-table-all td,.ucsc-table-all th{padding:8px 8px;display:table-cell;text-align:left;vertical-align:top}
+.ucsc-table th:first-child,.ucsc-table td:first-child,.ucsc-table-all th:first-child,.ucsc-table-all td:first-child{padding-left:16px}
+.ucsc-btn,.ucsc-button{border:none;display:inline-block;padding:8px 16px;vertical-align:middle;overflow:hidden;text-decoration:none;color:inherit;background-color:inherit;text-align:center;cursor:pointer;white-space:nowrap}
+.ucsc-btn:hover{box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)}
+.ucsc-btn,.ucsc-button{-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}   
+.ucsc-disabled,.ucsc-btn:disabled,.ucsc-button:disabled{cursor:not-allowed;opacity:0.3}.ucsc-disabled *,:disabled *{pointer-events:none}
+.ucsc-btn.ucsc-disabled:hover,.ucsc-btn:disabled:hover{box-shadow:none}
+.ucsc-badge,.ucsc-tag{background-color:#000;color:#fff;display:inline-block;padding-left:8px;padding-right:8px;text-align:center}.ucsc-badge{border-radius:50%}
+.ucsc-ul{list-style-type:none;padding:0;margin:0}.ucsc-ul li{padding:8px 16px;border-bottom:1px solid #ddd}.ucsc-ul li:last-child{border-bottom:none}
+.ucsc-tooltip,.ucsc-display-container{position:relative}.ucsc-tooltip .ucsc-text{display:none}.ucsc-tooltip:hover .ucsc-text{display:inline-block}
+.ucsc-ripple:active{opacity:0.5}.ucsc-ripple{transition:opacity 0s}
+.ucsc-input{padding:8px;display:block;border:none;border-bottom:1px solid #ccc;width:100%}
+.ucsc-select{padding:9px 0;width:100%;border:none;border-bottom:1px solid #ccc}
+.ucsc-dropdown-click,.ucsc-dropdown-hover{position:relative;display:inline-block;cursor:pointer}
+.ucsc-dropdown-hover:hover .ucsc-dropdown-content{display:block}
+.ucsc-dropdown-hover:first-child,.ucsc-dropdown-click:hover{background-color:#ccc;color:#000}
+.ucsc-dropdown-hover:hover > .ucsc-button:first-child,.ucsc-dropdown-click:hover > .ucsc-button:first-child{background-color:#ccc;color:#000}
+.ucsc-dropdown-content{cursor:auto;color:#000;background-color:#fff;display:none;position:absolute;min-width:160px;margin:0;padding:0;z-index:1}
+.ucsc-check,.ucsc-radio{width:24px;height:24px;position:relative;top:6px}
+.ucsc-sidebar{height:100%;width:200px;background-color:#fff;position:fixed!important;z-index:1;overflow:auto}
+.ucsc-bar-block .ucsc-dropdown-hover,.ucsc-bar-block .ucsc-dropdown-click{width:100%}
+.ucsc-bar-block .ucsc-dropdown-hover .ucsc-dropdown-content,.ucsc-bar-block .ucsc-dropdown-click .ucsc-dropdown-content{min-width:100%}
+.ucsc-bar-block .ucsc-dropdown-hover .ucsc-button,.ucsc-bar-block .ucsc-dropdown-click .ucsc-button{width:100%;text-align:left;padding:8px 16px}
+.ucsc-main,#main{transition:margin-left .4s}
+.ucsc-modal{z-index:3;display:none;padding-top:100px;position:fixed;left:0;top:0;width:100%;height:100%;overflow:auto;background-color:rgb(0,0,0);background-color:rgba(0,0,0,0.4)}
+.ucsc-modal-content{margin:auto;background-color:#fff;position:relative;padding:0;outline:0;width:600px}
+.ucsc-bar{width:100%;overflow:hidden}.ucsc-center .ucsc-bar{display:inline-block;width:auto}
+.ucsc-bar .ucsc-bar-item{padding:8px 16px;float:left;width:auto;border:none;display:block;outline:0}
+.ucsc-bar .ucsc-dropdown-hover,.ucsc-bar .ucsc-dropdown-click{position:static;float:left}
+.ucsc-bar .ucsc-button{white-space:normal}
+.ucsc-bar-block .ucsc-bar-item{width:100%;display:block;padding:8px 16px;text-align:left;border:none;white-space:normal;float:none;outline:0}
+.ucsc-bar-block.ucsc-center .ucsc-bar-item{text-align:center}.ucsc-block{display:block;width:100%}
+.ucsc-responsive{display:block;overflow-x:auto}
+.ucsc-container:after,.ucsc-container:before,.ucsc-panel:after,.ucsc-panel:before,.ucsc-row:after,.ucsc-row:before,.ucsc-row-padding:after,.ucsc-row-padding:before,
+.ucsc-cell-row:before,.ucsc-cell-row:after,.ucsc-clear:after,.ucsc-clear:before,.ucsc-bar:before,.ucsc-bar:after{content:"";display:table;clear:both}
+.ucsc-col,.ucsc-half,.ucsc-third,.ucsc-twothird,.ucsc-threequarter,.ucsc-quarter{float:left;width:100%}
+.ucsc-col.s1{width:8.33333%}.ucsc-col.s2{width:16.66666%}.ucsc-col.s3{width:24.99999%}.ucsc-col.s4{width:33.33333%}
+.ucsc-col.s5{width:41.66666%}.ucsc-col.s6{width:49.99999%}.ucsc-col.s7{width:58.33333%}.ucsc-col.s8{width:66.66666%}
+.ucsc-col.s9{width:74.99999%}.ucsc-col.s10{width:83.33333%}.ucsc-col.s11{width:91.66666%}.ucsc-col.s12{width:99.99999%}
+@media (min-width:601px){.ucsc-col.m1{width:8.33333%}.ucsc-col.m2{width:16.66666%}.ucsc-col.m3,.ucsc-quarter{width:24.99999%}.ucsc-col.m4,.ucsc-third{width:33.33333%}
+.ucsc-col.m5{width:41.66666%}.ucsc-col.m6,.ucsc-half{width:49.99999%}.ucsc-col.m7{width:58.33333%}.ucsc-col.m8,.ucsc-twothird{width:66.66666%}
+.ucsc-col.m9,.ucsc-threequarter{width:74.99999%}.ucsc-col.m10{width:83.33333%}.ucsc-col.m11{width:91.66666%}.ucsc-col.m12{width:99.99999%}}
+@media (min-width:993px){.ucsc-col.l1{width:8.33333%}.ucsc-col.l2{width:16.66666%}.ucsc-col.l3{width:24.99999%}.ucsc-col.l4{width:33.33333%}
+.ucsc-col.l5{width:41.66666%}.ucsc-col.l6{width:49.99999%}.ucsc-col.l7{width:58.33333%}.ucsc-col.l8{width:66.66666%}
+.ucsc-col.l9{width:74.99999%}.ucsc-col.l10{width:83.33333%}.ucsc-col.l11{width:91.66666%}.ucsc-col.l12{width:99.99999%}}
+.ucsc-rest{overflow:hidden}.ucsc-stretch{margin-left:-16px;margin-right:-16px}
+.ucsc-content,.ucsc-auto{margin-left:auto;margin-right:auto}.ucsc-content{max-width:980px}.ucsc-auto{max-width:1140px}
+.ucsc-cell-row{display:table;width:100%}.ucsc-cell{display:table-cell}
+.ucsc-cell-top{vertical-align:top}.ucsc-cell-middle{vertical-align:middle}.ucsc-cell-bottom{vertical-align:bottom}
+.ucsc-hide{display:none!important}.ucsc-show-block,.ucsc-show{display:block!important}.ucsc-show-inline-block{display:inline-block!important}
+@media (max-width:1205px){.ucsc-auto{max-width:95%}}
+@media (max-width:600px){.ucsc-modal-content{margin:0 10px;width:auto!important}.ucsc-modal{padding-top:30px}
+.ucsc-dropdown-hover.ucsc-mobile .ucsc-dropdown-content,.ucsc-dropdown-click.ucsc-mobile .ucsc-dropdown-content{position:relative}	
+.ucsc-hide-small{display:none!important}.ucsc-mobile{display:block;width:100%!important}.ucsc-bar-item.ucsc-mobile,.ucsc-dropdown-hover.ucsc-mobile,.ucsc-dropdown-click.ucsc-mobile{text-align:center}
+.ucsc-dropdown-hover.ucsc-mobile,.ucsc-dropdown-hover.ucsc-mobile .ucsc-btn,.ucsc-dropdown-hover.ucsc-mobile .ucsc-button,.ucsc-dropdown-click.ucsc-mobile,.ucsc-dropdown-click.ucsc-mobile .ucsc-btn,.ucsc-dropdown-click.ucsc-mobile .ucsc-button{width:100%}}
+@media (max-width:768px){.ucsc-modal-content{width:500px}.ucsc-modal{padding-top:50px}}
+@media (min-width:993px){.ucsc-modal-content{width:900px}.ucsc-hide-large{display:none!important}.ucsc-sidebar.ucsc-collapse{display:block!important}}
+@media (max-width:992px) and (min-width:601px){.ucsc-hide-medium{display:none!important}}
+@media (max-width:992px){.ucsc-sidebar.ucsc-collapse{display:none}.ucsc-main{margin-left:0!important;margin-right:0!important}.ucsc-auto{max-width:100%}}
+.ucsc-top,.ucsc-bottom{position:fixed;width:100%;z-index:1}.ucsc-top{top:0}.ucsc-bottom{bottom:0}
+.ucsc-overlay{position:fixed;display:none;width:100%;height:100%;top:0;left:0;right:0;bottom:0;background-color:rgba(0,0,0,0.5);z-index:2}
+.ucsc-display-topleft{position:absolute;left:0;top:0}.ucsc-display-topright{position:absolute;right:0;top:0}
+.ucsc-display-bottomleft{position:absolute;left:0;bottom:0}.ucsc-display-bottomright{position:absolute;right:0;bottom:0}
+.ucsc-display-middle{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%)}
+.ucsc-display-left{position:absolute;top:50%;left:0%;transform:translate(0%,-50%);-ms-transform:translate(-0%,-50%)}
+.ucsc-display-right{position:absolute;top:50%;right:0%;transform:translate(0%,-50%);-ms-transform:translate(0%,-50%)}
+.ucsc-display-topmiddle{position:absolute;left:50%;top:0;transform:translate(-50%,0%);-ms-transform:translate(-50%,0%)}
+.ucsc-display-bottommiddle{position:absolute;left:50%;bottom:0;transform:translate(-50%,0%);-ms-transform:translate(-50%,0%)}
+.ucsc-display-container:hover .ucsc-display-hover{display:block}.ucsc-display-container:hover span.ucsc-display-hover{display:inline-block}.ucsc-display-hover{display:none}
+.ucsc-display-position{position:absolute}
+.ucsc-circle{border-radius:50%}
+.ucsc-round-small{border-radius:2px}.ucsc-round,.ucsc-round-medium{border-radius:4px}.ucsc-round-large{border-radius:8px}.ucsc-round-xlarge{border-radius:16px}.ucsc-round-xxlarge{border-radius:32px}
+.ucsc-row-padding,.ucsc-row-padding>.ucsc-half,.ucsc-row-padding>.ucsc-third,.ucsc-row-padding>.ucsc-twothird,.ucsc-row-padding>.ucsc-threequarter,.ucsc-row-padding>.ucsc-quarter,.ucsc-row-padding>.ucsc-col{padding:0 8px}
+.ucsc-container,.ucsc-panel{padding:0.01em 16px}.ucsc-panel{margin-top:16px;margin-bottom:16px}
+.ucsc-code,.ucsc-codespan{font-family:Consolas,"courier new";font-size:16px}
+.ucsc-code{width:auto;background-color:#fff;padding:8px 12px;border-left:4px solid #4CAF50;word-wrap:break-word}
+.ucsc-codespan{color:crimson;background-color:#f1f1f1;padding-left:4px;padding-right:4px;font-size:110%}
+.ucsc-card,.ucsc-card-2{box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)}
+.ucsc-card-4,.ucsc-hover-shadow:hover{box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19)}
+.ucsc-spin{animation:ucsc-spin 2s infinite linear}@keyframes ucsc-spin{0%{transform:rotate(0deg)}100%{transform:rotate(359deg)}}
+.ucsc-animate-fading{animation:fading 10s infinite}@keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
+.ucsc-animate-opacity{animation:opac 0.8s}@keyframes opac{from{opacity:0} to{opacity:1}}
+.ucsc-animate-top{position:relative;animation:animatetop 0.4s}@keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1}}
+.ucsc-animate-left{position:relative;animation:animateleft 0.4s}@keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
+.ucsc-animate-right{position:relative;animation:animateright 0.4s}@keyframes animateright{from{right:-300px;opacity:0} to{right:0;opacity:1}}
+.ucsc-animate-bottom{position:relative;animation:animatebottom 0.4s}@keyframes animatebottom{from{bottom:-300px;opacity:0} to{bottom:0;opacity:1}}
+.ucsc-animate-zoom {animation:animatezoom 0.6s}@keyframes animatezoom{from{transform:scale(0)} to{transform:scale(1)}}
+.ucsc-animate-input{transition:width 0.4s ease-in-out}.ucsc-animate-input:focus{width:100%!important}
+.ucsc-opacity,.ucsc-hover-opacity:hover{opacity:0.60}.ucsc-opacity-off,.ucsc-hover-opacity-off:hover{opacity:1}
+.ucsc-opacity-max{opacity:0.25}.ucsc-opacity-min{opacity:0.75}
+.ucsc-greyscale-max,.ucsc-grayscale-max,.ucsc-hover-greyscale:hover,.ucsc-hover-grayscale:hover{filter:grayscale(100%)}
+.ucsc-greyscale,.ucsc-grayscale{filter:grayscale(75%)}.ucsc-greyscale-min,.ucsc-grayscale-min{filter:grayscale(50%)}
+.ucsc-sepia{filter:sepia(75%)}.ucsc-sepia-max,.ucsc-hover-sepia:hover{filter:sepia(100%)}.ucsc-sepia-min{filter:sepia(50%)}
+.ucsc-tiny{font-size:10px!important}.ucsc-small{font-size:12px!important}.ucsc-medium{font-size:15px!important}.ucsc-large{font-size:18px!important}
+.ucsc-xlarge{font-size:24px!important}.ucsc-xxlarge{font-size:36px!important}.ucsc-xxxlarge{font-size:48px!important}.ucsc-jumbo{font-size:64px!important}
+.ucsc-left-align{text-align:left!important}.ucsc-right-align{text-align:right!important}.ucsc-justify{text-align:justify!important}.ucsc-center{text-align:center!important}
+.ucsc-border-0{border:0!important}.ucsc-border{border:1px solid #ccc!important}
+.ucsc-border-top{border-top:1px solid #ccc!important}.ucsc-border-bottom{border-bottom:1px solid #ccc!important}
+.ucsc-border-left{border-left:1px solid #ccc!important}.ucsc-border-right{border-right:1px solid #ccc!important}
+.ucsc-topbar{border-top:6px solid #ccc!important}.ucsc-bottombar{border-bottom:6px solid #ccc!important}
+.ucsc-leftbar{border-left:6px solid #ccc!important}.ucsc-rightbar{border-right:6px solid #ccc!important}
+.ucsc-section,.ucsc-code{margin-top:16px!important;margin-bottom:16px!important}
+.ucsc-margin{margin:16px!important}.ucsc-margin-top{margin-top:16px!important}.ucsc-margin-bottom{margin-bottom:16px!important}
+.ucsc-margin-left{margin-left:16px!important}.ucsc-margin-right{margin-right:16px!important}
+.ucsc-padding-small{padding:4px 8px!important}.ucsc-padding{padding:8px 16px!important}.ucsc-padding-large{padding:12px 24px!important}
+.ucsc-padding-16{padding-top:16px!important;padding-bottom:16px!important}.ucsc-padding-24{padding-top:24px!important;padding-bottom:24px!important}
+.ucsc-padding-32{padding-top:32px!important;padding-bottom:32px!important}.ucsc-padding-48{padding-top:48px!important;padding-bottom:48px!important}
+.ucsc-padding-64{padding-top:64px!important;padding-bottom:64px!important}
+.ucsc-padding-top-64{padding-top:64px!important}.ucsc-padding-top-48{padding-top:48px!important}
+.ucsc-padding-top-32{padding-top:32px!important}.ucsc-padding-top-24{padding-top:24px!important}
+.ucsc-left{float:left!important}.ucsc-right{float:right!important}
+.ucsc-button:hover{color:#000!important;background-color:#ccc!important}
+.ucsc-transparent,.ucsc-hover-none:hover{background-color:transparent!important}
+.ucsc-hover-none:hover{box-shadow:none!important}
+/* Colors */
+.ucsc-amber,.ucsc-hover-amber:hover{color:#000!important;background-color:#ffc107!important}
+.ucsc-aqua,.ucsc-hover-aqua:hover{color:#000!important;background-color:#00ffff!important}
+.ucsc-blue,.ucsc-hover-blue:hover{color:#fff!important;background-color:#2196F3!important}
+.ucsc-light-blue,.ucsc-hover-light-blue:hover{color:#000!important;background-color:#87CEEB!important}
+.ucsc-brown,.ucsc-hover-brown:hover{color:#fff!important;background-color:#795548!important}
+.ucsc-cyan,.ucsc-hover-cyan:hover{color:#000!important;background-color:#00bcd4!important}
+.ucsc-blue-grey,.ucsc-hover-blue-grey:hover,.ucsc-blue-gray,.ucsc-hover-blue-gray:hover{color:#fff!important;background-color:#607d8b!important}
+.ucsc-green,.ucsc-hover-green:hover{color:#fff!important;background-color:#4CAF50!important}
+.ucsc-light-green,.ucsc-hover-light-green:hover{color:#000!important;background-color:#8bc34a!important}
+.ucsc-indigo,.ucsc-hover-indigo:hover{color:#fff!important;background-color:#3f51b5!important}
+.ucsc-khaki,.ucsc-hover-khaki:hover{color:#000!important;background-color:#f0e68c!important}
+.ucsc-lime,.ucsc-hover-lime:hover{color:#000!important;background-color:#cddc39!important}
+.ucsc-orange,.ucsc-hover-orange:hover{color:#000!important;background-color:#ff9800!important}
+.ucsc-deep-orange,.ucsc-hover-deep-orange:hover{color:#fff!important;background-color:#ff5722!important}
+.ucsc-pink,.ucsc-hover-pink:hover{color:#fff!important;background-color:#e91e63!important}
+.ucsc-purple,.ucsc-hover-purple:hover{color:#fff!important;background-color:#9c27b0!important}
+.ucsc-deep-purple,.ucsc-hover-deep-purple:hover{color:#fff!important;background-color:#673ab7!important}
+.ucsc-red,.ucsc-hover-red:hover{color:#fff!important;background-color:#f44336!important}
+.ucsc-sand,.ucsc-hover-sand:hover{color:#000!important;background-color:#fdf5e6!important}
+.ucsc-teal,.ucsc-hover-teal:hover{color:#fff!important;background-color:#009688!important}
+.ucsc-yellow,.ucsc-hover-yellow:hover{color:#000!important;background-color:#ffeb3b!important}
+.ucsc-white,.ucsc-hover-white:hover{color:#000!important;background-color:#fff!important}
+.ucsc-black,.ucsc-hover-black:hover{color:#fff!important;background-color:#000!important}
+.ucsc-grey,.ucsc-hover-grey:hover,.ucsc-gray,.ucsc-hover-gray:hover{color:#000!important;background-color:#9e9e9e!important}
+.ucsc-light-grey,.ucsc-hover-light-grey:hover,.ucsc-light-gray,.ucsc-hover-light-gray:hover{color:#000!important;background-color:#f1f1f1!important}
+.ucsc-dark-grey,.ucsc-hover-dark-grey:hover,.ucsc-dark-gray,.ucsc-hover-dark-gray:hover{color:#fff!important;background-color:#616161!important}
+.ucsc-pale-red,.ucsc-hover-pale-red:hover{color:#000!important;background-color:#ffdddd!important}
+.ucsc-pale-green,.ucsc-hover-pale-green:hover{color:#000!important;background-color:#ddffdd!important}
+.ucsc-pale-yellow,.ucsc-hover-pale-yellow:hover{color:#000!important;background-color:#ffffcc!important}
+.ucsc-pale-blue,.ucsc-hover-pale-blue:hover{color:#000!important;background-color:#ddffff!important}
+.ucsc-text-amber,.ucsc-hover-text-amber:hover{color:#ffc107!important}
+.ucsc-text-aqua,.ucsc-hover-text-aqua:hover{color:#00ffff!important}
+.ucsc-text-blue,.ucsc-hover-text-blue:hover{color:#2196F3!important}
+.ucsc-text-light-blue,.ucsc-hover-text-light-blue:hover{color:#87CEEB!important}
+.ucsc-text-brown,.ucsc-hover-text-brown:hover{color:#795548!important}
+.ucsc-text-cyan,.ucsc-hover-text-cyan:hover{color:#00bcd4!important}
+.ucsc-text-blue-grey,.ucsc-hover-text-blue-grey:hover,.ucsc-text-blue-gray,.ucsc-hover-text-blue-gray:hover{color:#607d8b!important}
+.ucsc-text-green,.ucsc-hover-text-green:hover{color:#4CAF50!important}
+.ucsc-text-light-green,.ucsc-hover-text-light-green:hover{color:#8bc34a!important}
+.ucsc-text-indigo,.ucsc-hover-text-indigo:hover{color:#3f51b5!important}
+.ucsc-text-khaki,.ucsc-hover-text-khaki:hover{color:#b4aa50!important}
+.ucsc-text-lime,.ucsc-hover-text-lime:hover{color:#cddc39!important}
+.ucsc-text-orange,.ucsc-hover-text-orange:hover{color:#ff9800!important}
+.ucsc-text-deep-orange,.ucsc-hover-text-deep-orange:hover{color:#ff5722!important}
+.ucsc-text-pink,.ucsc-hover-text-pink:hover{color:#e91e63!important}
+.ucsc-text-purple,.ucsc-hover-text-purple:hover{color:#9c27b0!important}
+.ucsc-text-deep-purple,.ucsc-hover-text-deep-purple:hover{color:#673ab7!important}
+.ucsc-text-red,.ucsc-hover-text-red:hover{color:#f44336!important}
+.ucsc-text-sand,.ucsc-hover-text-sand:hover{color:#fdf5e6!important}
+.ucsc-text-teal,.ucsc-hover-text-teal:hover{color:#009688!important}
+.ucsc-text-yellow,.ucsc-hover-text-yellow:hover{color:#d2be0e!important}
+.ucsc-text-white,.ucsc-hover-text-white:hover{color:#fff!important}
+.ucsc-text-black,.ucsc-hover-text-black:hover{color:#000!important}
+.ucsc-text-grey,.ucsc-hover-text-grey:hover,.ucsc-text-gray,.ucsc-hover-text-gray:hover{color:#757575!important}
+.ucsc-text-light-grey,.ucsc-hover-text-light-grey:hover,.ucsc-text-light-gray,.ucsc-hover-text-light-gray:hover{color:#f1f1f1!important}
+.ucsc-text-dark-grey,.ucsc-hover-text-dark-grey:hover,.ucsc-text-dark-gray,.ucsc-hover-text-dark-gray:hover{color:#3a3a3a!important}
+.ucsc-border-amber,.ucsc-hover-border-amber:hover{border-color:#ffc107!important}
+.ucsc-border-aqua,.ucsc-hover-border-aqua:hover{border-color:#00ffff!important}
+.ucsc-border-blue,.ucsc-hover-border-blue:hover{border-color:#2196F3!important}
+.ucsc-border-light-blue,.ucsc-hover-border-light-blue:hover{border-color:#87CEEB!important}
+.ucsc-border-brown,.ucsc-hover-border-brown:hover{border-color:#795548!important}
+.ucsc-border-cyan,.ucsc-hover-border-cyan:hover{border-color:#00bcd4!important}
+.ucsc-border-blue-grey,.ucsc-hover-border-blue-grey:hover,.ucsc-border-blue-gray,.ucsc-hover-border-blue-gray:hover{border-color:#607d8b!important}
+.ucsc-border-green,.ucsc-hover-border-green:hover{border-color:#4CAF50!important}
+.ucsc-border-light-green,.ucsc-hover-border-light-green:hover{border-color:#8bc34a!important}
+.ucsc-border-indigo,.ucsc-hover-border-indigo:hover{border-color:#3f51b5!important}
+.ucsc-border-khaki,.ucsc-hover-border-khaki:hover{border-color:#f0e68c!important}
+.ucsc-border-lime,.ucsc-hover-border-lime:hover{border-color:#cddc39!important}
+.ucsc-border-orange,.ucsc-hover-border-orange:hover{border-color:#ff9800!important}
+.ucsc-border-deep-orange,.ucsc-hover-border-deep-orange:hover{border-color:#ff5722!important}
+.ucsc-border-pink,.ucsc-hover-border-pink:hover{border-color:#e91e63!important}
+.ucsc-border-purple,.ucsc-hover-border-purple:hover{border-color:#9c27b0!important}
+.ucsc-border-deep-purple,.ucsc-hover-border-deep-purple:hover{border-color:#673ab7!important}
+.ucsc-border-red,.ucsc-hover-border-red:hover{border-color:#f44336!important}
+.ucsc-border-sand,.ucsc-hover-border-sand:hover{border-color:#fdf5e6!important}
+.ucsc-border-teal,.ucsc-hover-border-teal:hover{border-color:#009688!important}
+.ucsc-border-yellow,.ucsc-hover-border-yellow:hover{border-color:#ffeb3b!important}
+.ucsc-border-white,.ucsc-hover-border-white:hover{border-color:#fff!important}
+.ucsc-border-black,.ucsc-hover-border-black:hover{border-color:#000!important}
+.ucsc-border-grey,.ucsc-hover-border-grey:hover,.ucsc-border-gray,.ucsc-hover-border-gray:hover{border-color:#9e9e9e!important}
+.ucsc-border-light-grey,.ucsc-hover-border-light-grey:hover,.ucsc-border-light-gray,.ucsc-hover-border-light-gray:hover{border-color:#f1f1f1!important}
+.ucsc-border-dark-grey,.ucsc-hover-border-dark-grey:hover,.ucsc-border-dark-gray,.ucsc-hover-border-dark-gray:hover{border-color:#616161!important}
+.ucsc-border-pale-red,.ucsc-hover-border-pale-red:hover{border-color:#ffe7e7!important}.ucsc-border-pale-green,.ucsc-hover-border-pale-green:hover{border-color:#e7ffe7!important}
+.ucsc-border-pale-yellow,.ucsc-hover-border-pale-yellow:hover{border-color:#ffffcc!important}.ucsc-border-pale-blue,.ucsc-hover-border-pale-blue:hover{border-color:#e7ffff!important}

@@ -1,0 +1,62 @@
+/* Default styles */
+
+/* Responsive styles for screens smaller than 768px */
+@media (max-width: 768px) {
+    .content {
+        margin-left: 20px; /* Adjust the margin for smaller screens */
+    }
+    
+    .top-navbar {
+        flex-direction: column; /* Stack elements vertically for smaller screens */
+        align-items: center; /* Center items horizontally */
+        text-align: center; /* Center text */
+    }
+    
+  
+}
+
+/* Responsive styles for screens smaller than 480px */
+@media (max-width: 480px) {
+    .top-navbar {
+        padding: 10px; /* Increase padding for smaller screens */
+    } 
+}
+.content {
+    margin-left: 300px;
+    margin-top: 100px;
+    color: #8d0707;
+    
+}
+.flex{
+    display:flex;
+}
+
+
+.top-navbar {
+    background-color: #9d3a3a;
+    color: #d3aaaa;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+.navbar-logo img {
+    width: 150px;
+    height: auto; 
+}
+.top-navbar button {
+    background-color: #9d3a3a;
+    color: #f4c1c1;
+    border: none;
+    padding: 8px 16px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.top-navbar .log-button{
+    background-color: #cdb2b2; 
+    color: #4a0202; 
+}
+
+
